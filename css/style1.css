@@ -1,0 +1,1015 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+.wrap {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+     box-sizing: border-box;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 2.2em;
+    font-family: 'retro', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 0.5em 0;
+
+}
+
+.s1 {
+    color: rgb(255, 255, 255);
+}
+
+.s2 {
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+/*숨김*/
+
+.s3 {
+    display: none;
+}
+
+#header, #h3-text, #me, .pizza, .com, .car, .game, #yearin{
+    display: none;
+}
+
+.click-text2, .click-text2-2, .click-text3, .click-text3-2, .click-text4, .click-text4-2, .click-text5, .click-text5-2 {
+    display: none;
+}
+
+
+/**/
+
+/*스위치*/
+
+#switch {
+    position: relative;
+    margin-bottom: 0.5em;
+    transform: scale(0.7);
+    left: -10%;
+    
+
+
+}
+
+.switch-button {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+}
+
+
+.switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.onoff-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: #ccc;
+    box-shadow: inset 1px 5px 1px #999;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.onoff-switch:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .5s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+
+.switch-button input:checked + .onoff-switch {
+    background-color: #f2d522;
+    box-shadow: inset 1px 5px 1px #e3ae56;
+
+}
+
+
+
+.switch-button input:checked + .onoff-switch:before {
+    -webkit-transform:
+        translateX(65px);
+    -ms-transform:
+        translateX(65px);
+    transform:
+        translateX(65px);
+}
+
+
+/**/
+
+.background {
+    background-image: url(../img/back2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+h4 {
+    font-weight: 550;
+    font-family: 'retro', sans-serif;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    transform: scale(0.7)
+}
+
+.icon li a {
+    color: black;
+    font-size: 2em;
+    margin: 1em;
+}
+
+
+
+
+
+/* 모달 스타일 */
+
+.modal-content {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+
+
+.modal-content {
+    width: 100%; /* 또는 필요한 너비 */
+    height: 100%; /* 또는 필요한 높이 */
+    max-width: 100%; /* 최대 너비 설정 */
+    max-height: 100%; /* 최대 높이 설정 */
+    overflow-y: auto; /* 필요에 따라 스크롤 가능하도록 설정 */
+    position: fixed; /* 위치를 고정시켜야 함 */
+    top: 0;
+    left: 50%;
+    background-color: black; /* 예시로 백그라운드 색상 지정 */
+    z-index: 20; /* 다른 요소들보다 위에 나타나도록 설정 */
+}
+
+
+.box.modal-open::after {
+    color: rgba(0, 0, 0, 0);
+}
+
+
+
+.modal-content{
+    position: relative;
+}
+
+
+/*모달포폴*/
+
+.port-text{
+      font-family: 'retro', sans-serif;
+        font-size: 2em;
+        color: white;
+    text-align: center;
+    margin-top:  20px;
+}
+
+.portfolio {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.portfolio >li{
+    margin-bottom: -10px;
+    margin-top: -20px;
+}
+
+.portfolio >li >a{
+     font-family: 'retro', sans-serif;
+        font-size: 1.1em;
+        color: white;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+
+.portfolio >li >a:hover{
+    color: yellow;
+}
+
+
+
+/**/
+
+
+
+
+/*모달사람*/
+
+.left{
+    width: 340px;
+    height: 250px;
+/*    border: 2px solid red;*/
+}
+
+
+.scroll{
+        color: white;
+    text-align: center;
+    font-family: 'retro', sans-serif;
+    font-size:  0.2em;
+    letter-spacing: 0.08em;
+    padding-top: 20px;
+}
+.left>h5{
+    font-family: 'retro', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-top: 30px;
+    margin-left: 92px;
+}
+
+.right{
+    width: 340px;
+    height: 382px;
+    margin-top: 50px;
+    
+}
+
+.right>h5{
+     font-family: 'retro', sans-serif;
+        font-size: 2em;
+    color: white;
+       margin-top: 30px;
+    margin-left: 92px;
+
+}
+
+.right span{
+    font-size: 0.8em;
+    font-weight: lighter;
+ 
+}
+
+
+.right li{
+    color: white;
+/*    text-align: center;*/
+    font-family: 'retro', sans-serif;
+    line-height: 42px;
+    font-size:  1.1em;
+    letter-spacing: 0.08em;
+    margin-left: 45px;
+   
+}
+
+
+.add ul{
+    margin-top: 30px; 
+}
+
+.left li{
+    color: white;
+/*    text-align: center;*/
+    font-family: 'retro', sans-serif;
+    line-height: 30px;
+    font-size:  1.1em;
+    letter-spacing: 0.08em;
+    margin-left: 45px;
+   
+}
+
+/**/
+
+/*모달휴대폰*/
+
+.c5{
+    position: absolute;
+    color: white;
+    font-family: 'retro', sans-serif;
+    font-size: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.contact-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    width:280px;
+    font-size: 0.6em;
+    left: 45%;
+    font-family: 'retro', sans-serif;
+}
+.contact-text img{
+    transform: scale(0.4);
+
+    
+}
+
+.contact-text li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text li:nth-child(1) p{
+    letter-spacing: 0.1em;
+    margin-left: 33px;
+}
+
+.contact-text p{
+    color: white;
+    
+    font-size: 2em;
+    
+}
+
+.tablet_p > li{
+    margin-bottom: -20px;
+    margin-top: 8px;
+}
+
+/**/
+
+
+
+
+    
+/*게이지바    */
+    
+  .gauge-container {
+    width: 320px;
+    margin: 3px auto;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top:18px;
+    z-index: 10;
+      display: block;
+    
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.gauge {
+    width: 500px; 
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background-color: black;
+    border-radius: 50px;
+    transition: width 1s ease-out;
+}
+
+span{
+    width: 100px;
+    font-family: 'retro',sans-serif;
+}
+   
+
+
+
+
+@media all and (min-width:768px) {
+   
+
+    
+    .wrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+    .background {
+    background-image: url(../img/back2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+    
+.icon {
+    margin-top: 3.5em;
+/*    display: block;*/
+/*    position: absolute;*/
+margin: 0 auto;
+    margin-top: 2em;
+    
+}
+    
+
+.icon li a {
+    color: black;
+    font-size: 2em;
+    margin: 1em;
+}
+
+    .scroll{
+        display: none;
+    }
+    
+    .tablet_m{
+        margin-top: 20px;
+        font-size: 1.6em;
+    }  
+    
+    .tablet_m >li > a{
+        font-size: 0.8em;
+    }
+    
+  
+    .add{
+        display: flex;
+    }
+    
+    .right{
+margin-top: 0;
+}
+
+.right li{
+    font-size:  1.1em;
+     line-height: 30px;
+}
+
+    span{
+        margin-top: 0;
+    }
+    
+    
+.right{
+    width: 360px;
+    height: 320px;
+    margin-top:0px;
+    
+}
+    
+.left{
+    width: 360px;
+    height: 320px;
+/*    border: 2px solid red;*/
+    margin-top: 0x;
+    
+}
+    
+    .tablet_p{
+        margin-top: 50px;
+        font-size: 1.2em;
+        width: 440px;
+        margin-left: 1em;
+    }
+
+    
+    
+    
+/*게이지바    */
+    
+  .gauge-container {
+    width: 520px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top:18px;
+    z-index: 10;
+      display: block;
+    
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.gauge {
+    width: 500px; 
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background-color: black;
+    border-radius: 50px;
+    transition: width 1s ease-out;
+}
+
+span{
+    width: 100px;
+    font-family: 'retro',sans-serif;
+}
+    
+    
+/* 모달포폴    */
+    .port-text{
+        font-size: 2.5em;
+        margin-top: 20px;
+}
+    .portfolio {
+        margin-top: 40px;
+    }
+    
+    .portfolio >li >a{
+        font-size: 1.1em;
+        line-height: 2.3em;
+       
+}
+
+    .c5{
+        font-size: 2.5em;
+    }   
+    
+    .left{
+        width: 320px;
+        box-sizing: border-box;
+    }
+    
+    .left ul{
+    }
+    .left > h5{
+    margin-left:-14px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .right h5{
+        font-size: 2.5em;
+            margin-left:40px;
+
+    }
+    
+}
+
+
+
+@media all and (min-width:1280px){
+    
+    .wrap {
+    width: 683px;
+    min-width: 683px;
+    height: 382px;
+    position: relative;
+/*    background-image: url(../img/back2.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+    .s3{
+        display: block;
+    }
+    
+    .background{
+        height: 380px;
+    }
+    
+    
+    .block {
+    position: absolute;
+    width: 692px;
+    min-width: 692px;
+    height: 390px;
+    top: 112%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.block:before,
+.block:after {
+    content: '';
+    position: absolute;
+   background: linear-gradient(45deg, #fb0094, rgb(255, 70, 184), #c453ed, #ffff6d, #ff3684, #ff91d2, #ff1ddc, #ff40d3, #ffff00, #e51eff);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: steam 20s linear infinite;
+      top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(0px);
+}
+
+    
+/*   스위치*/
+    #switch {
+    position: relative;
+    margin-bottom: 1.5em;
+    transform: scale(1);
+    left: 0%;
+
+
+}
+    
+    
+/*    show*/
+    
+    
+#header, #h3-text, #me, .pizza, .com, .car, .game, #yearin{
+    display: block;
+}
+
+    
+ .wrap > img {
+    position: absolute;
+    
+} 
+    
+.pizza,
+.com,
+.car,
+.game
+{
+    position: absolute;
+}
+
+.pizza {
+    left: 10%;
+    top: 54%;
+    width: 15%;
+    
+}
+
+.com {
+    left: 76%;
+    top: 46%;
+    width: 13%;
+}
+
+.car {
+    top: 42%;
+    left: 39%;
+    width: 16%;
+}
+
+.game{
+   top: 85%;
+    left: 55%;
+    width: 12%;
+    transform: rotate(15deg);
+}
+
+.scale-up {
+    transform: scale(1.2);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    bottom: 0; 
+    z-index: 5;
+    }
+
+.box img {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+
+.click-text2,
+.click-text3,
+.click-text4,
+.click-text5,
+.click-text2-2,
+.click-text3-2,
+.click-text4-2,
+.click-text5-2
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 200px;
+    display: none;
+}
+
+
+.click-text2 {
+    top: 80%;
+    left: 30%;
+    position: absolute;
+    font-size: 1em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+}
+
+.click-text2-2 {
+    top: 57%;
+    left: 10%;
+    position: absolute;
+    font-size: 0.8em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+
+.click-text3 {
+    top: 67%;
+    left: 70%;
+    position: absolute;
+    font-size: 1em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+}
+
+.click-text3-2 {
+    top: 39%;
+    left: 80%;
+    position: absolute;
+    font-size: 0.8em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+}
+
+.click-text4 {
+     top: 57%;
+    left: 55%;
+    position: absolute;
+    font-size: 1em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+
+}
+.click-text4-2 {
+     top: 32%;
+    left: 45%;
+    position: absolute;
+    font-size: 0.8em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+
+}
+
+
+
+.click-text5 {
+      top: 77%;
+    left: 55%;
+    position: absolute;
+    font-size: 1em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+
+}
+
+.click-text5-2 {
+      top: 87%;
+    left: 50%;
+    position: absolute;
+    font-size: 0.8em;
+      font-family: 'retro', sans-serif;
+    color: #ff2929;
+    background-color: white;
+    z-index: 10;
+}
+
+    #yearin{
+    position: relative;
+    right: 70px;
+    bottom:-330px;
+        font-family: 'retro',sans-serif;
+        font-weight: 100;
+    } 
+    
+/*모달포폴*/
+
+.port-text{
+        font-size:3em;
+    margin-top:  20px;
+}
+
+.portfolio {
+    margin-top: 60px;
+}
+
+.portfolio >li{
+    
+    margin-top: -10px;
+}
+
+    /*모달사람*/
+
+
+
+.left>h5{
+    font-family: 'retro', sans-serif;
+    font-size: 3em;
+    color: white;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+
+
+.right>h5{
+     font-family: 'retro', sans-serif;
+        font-size: 3em;
+    color: white;
+       margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+
+
+
+.right li{
+    line-height: 42px;
+}
+
+
+
+
+.left li{
+
+    line-height: 42px;
+ 
+}
+    
+    /*모달휴대폰*/
+
+.c5{
+    font-size: 3em;
+    left: 50%;
+    top: 30px;
+}
+
+.contact-text{
+    width:600px;
+    font-size: 1.5em;
+}
+
+
+
+
+
+.tablet_p > li{
+    margin-bottom: -10px;
+    margin-top: 28px;
+}
+
+
+    .pizza:hover{
+        transform: scale(1.2);
+    }
+
+        .com:hover{
+        transform: scale(1.2);
+    }
+
+        .game:hover{
+        transform: scale(1.2);
+    }
+
+        .car:hover{
+        transform: scale(1.2);
+    }
+
+ 
+/*    .s3 깜빡거리게*/
+            @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-text {
+            animation: blink 2s linear 3;
+        }
+    
+}

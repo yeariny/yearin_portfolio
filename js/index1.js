@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 moveBox(0, -moveStep);
                 break;
         }
+        yearin.style.display = 'none';
+
     });
 });
 
